@@ -1,5 +1,8 @@
-Long-read SV Benchmark CMRG
-===========================
+:bar_chart: Long-read SV Benchmark CMRG
+=======================================
+
+.. image:: benchmark_result.png
+    :align: left
 
 
 |    | caller   | platform   |   TP |   FP |   FN |   precision |   recall |     f1 |   gt_concordance |
