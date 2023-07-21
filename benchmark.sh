@@ -78,5 +78,5 @@ do
 done
 
 # Optionally run:
-pip install mathplotlib pandas seaborn
+pip install matplotlib pandas seaborn
 python3 plot_benchmark.py
