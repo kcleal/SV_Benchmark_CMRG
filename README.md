@@ -1,6 +1,11 @@
 :bar_chart: Long-read SV Benchmark CMRG
 =======================================
 
+The is a reproducible benchmark of structural variants in challenging medically relevant genes. The truth set is described in detail here:
+
+[Curated variation benchmarks for challenging medically relevant autosomal genes. Wagner et al., 2022. Nature Biotechnology](https://www.nature.com/articles/s41587-021-01158-1)
+
+
 ![plot](./benchmark_result.png)
 
 
@@ -20,9 +25,7 @@
 |  3 | dysgu    | PacBio     |  192 |    **1** |   25 |      **0.9948** |   0.8848 | **0.9366** |           0.8958 |
 
 
-The is a reproducible benchmark of structural variants in challenging medically relevant genes. The truth set is described in detail here:
 
-[Curated variation benchmarks for challenging medically relevant autosomal genes. Wagner et al., 2022. Nature Biotechnology](https://www.nature.com/articles/s41587-021-01158-1)
 
 Reads were from Oxford Nanopore kit14 (~40X coverage), and PacBio Revio HiFi (~30X coverage). SV callers tested were as follows:
 
