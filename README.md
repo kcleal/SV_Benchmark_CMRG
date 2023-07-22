@@ -63,7 +63,7 @@ Install tools:
 ```
 mamba create -c bioconda -c conda-forge -n bench python=3.9 awscli sniffles=2.0.7 cuteSV=2.0.3 truvari=4.0.0 delly=1.1.6 -y
 conda activate bench
-pip install dysgu==1.5.3
+pip install dysgu==1.5.0
 ```
 
 ## Grab datasets
