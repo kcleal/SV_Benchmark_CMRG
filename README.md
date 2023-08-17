@@ -8,28 +8,26 @@ This is a reproducible benchmark of structural variants in challenging medically
 
 ![plot](./benchmark_result.png)
 
-
 |    | caller   | platform   |   TP |   FP |   FN |   precision |   recall |     f1 |   gt_concordance |
 |---:|:---------|:-----------|-----:|-----:|-----:|------------:|---------:|-------:|-----------------:|
-|  0 | sniffles | ONT        |  **195** |   17 |   **22** |      0.9198 |   **0.8986** | 0.9091 |           0.8667 |
+|  0 | sniffles | ONT        |  194 |   18 |   23 |      0.9151 |   0.894  | 0.9044 |           0.8814 |
 |  1 | cuteSV   | ONT        |  194 |   13 |   23 |      0.9372 |   0.894  | 0.9151 |           0.8918 |
-|  2 | delly    | ONT        |  193 |   12 |   24 |      0.9415 |   0.8894 | 0.9147 |           **0.8964** |
-|  3 | dysgu    | ONT        |  **195** |    **2** |   **22** |      **0.9898** |   **0.8986** | **0.942**  |           0.8821 |
-
+|  2 | delly    | ONT        |  193 |   12 |   24 |      0.9415 |   0.8894 | 0.9147 |           0.8964 |
+|  3 | dysgu    | ONT        |  195 |    1 |   22 |      0.9949 |   0.8986 | 0.9443 |           0.8821 |
 
 |    | caller   | platform   |   TP |   FP |   FN |   precision |   recall |     f1 |   gt_concordance |
 |---:|:---------|:-----------|-----:|-----:|-----:|------------:|---------:|-------:|-----------------:|
-|  0 | sniffles | PacBio     |  **193** |    5 |   **24** |      0.9747 |   **0.8894** | 0.9301 |           0.8912 |
-|  1 | cuteSV   | PacBio     |  190 |    8 |   27 |      0.9596 |   0.8756 | 0.9157 |           **0.9**    |
+|  0 | sniffles | PacBio     |  193 |    4 |   24 |      0.9797 |   0.8894 | 0.9324 |           0.8912 |
+|  1 | cuteSV   | PacBio     |  190 |    8 |   27 |      0.9596 |   0.8756 | 0.9157 |           0.9    |
 |  2 | delly    | PacBio     |  191 |    5 |   26 |      0.9745 |   0.8802 | 0.9249 |           0.8743 |
-|  3 | dysgu    | PacBio     |  192 |    **1** |   25 |      **0.9948** |   0.8848 | **0.9366** |           0.8958 |
+|  3 | dysgu    | PacBio     |  193 |    1 |   24 |      0.9948 |   0.8894 | 0.9392 |           0.8808 |
 
 
 
 
 Reads were from Oxford Nanopore kit14 (~40X coverage), and PacBio Revio HiFi (~30X coverage). SV callers tested were as follows:
 
-- [sniffles v2.0.7](https://github.com/fritzsedlazeck/Sniffles)
+- [sniffles v2.2.0](https://github.com/fritzsedlazeck/Sniffles)
 
 - [cuteSV v2.0.3](https://github.com/tjiangHIT/cuteSV)
 
@@ -61,9 +59,9 @@ Note, you may need to set the memory and swap space manually using Docker Deskto
 Install tools:
 
 ```
-mamba create -c bioconda -c conda-forge -n bench python=3.9 awscli sniffles=2.0.7 cuteSV=2.0.3 truvari=4.0.0 delly=1.1.6 -y
+mamba create -c bioconda -c conda-forge -n bench python=3.9 awscli sniffles=2.2.0 cuteSV=2.0.3 truvari=4.0.0 delly=1.1.6 -y
 conda activate bench
-pip install dysgu==1.5.0
+pip install dysgu==1.6.0
 ```
 
 ## Grab datasets
