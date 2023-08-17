@@ -5,9 +5,9 @@
 # docker run -it --memory="32g" --mount src="${PWD}",target=/results,type=bind condaforge/mambaforge
 # mamba update conda -y && cd results
 
-mamba create -c bioconda -c conda-forge -n bench python=3.9 awscli sniffles=2.0.7 cuteSV=2.0.3 truvari=4.0.0 delly=1.1.6 -y
+mamba create -c bioconda -c conda-forge -n bench python=3.9 awscli sniffles=2.2.0 cuteSV=2.0.3 truvari=4.0.0 delly=1.1.6 -y
 conda activate bench
-pip install dysgu==1.5.0
+pip install dysgu==1.6.0
 
 
 # Reference genome
