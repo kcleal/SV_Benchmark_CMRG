@@ -33,7 +33,7 @@ Reads were from Oxford Nanopore kit14 (~40X coverage), and PacBio Revio HiFi (~3
 
 - [delly v1.1.6](https://github.com/dellytools/delly)
 
-- [dysgu v1.5.0](https://github.com/kcleal/dysgu)
+- [dysgu v1.6.0](https://github.com/kcleal/dysgu)
 
 
 
