@@ -74,7 +74,12 @@ Reads were from Oxford Nanopore kit14 (~40X coverage), and PacBio Vega HiFi (~30
 
 For benchmarking [truvari v4.2](https://github.com/ACEnglish/truvari) was used.
 
-Run `nextflow pipeline.nf` to repeat these results.
+To repeat these results run:
+
+```
+bash fetch_data.sh
+nextflow pipeline.nf
+```
 
 
 ## Notes
