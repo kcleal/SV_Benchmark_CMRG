@@ -1,0 +1,23 @@
+name: bench
+channels:
+  - conda-forge
+  - bioconda
+  - defaults
+dependencies:
+  - python=3.11
+  - pip
+  - awscli
+  - bcftools
+  - mamba
+  - samtools
+  - severus=1.2
+  - pip:
+    - dysgu==1.7.0
+    - cuteSV==2.1.1
+    - sniffles==2.4
+    - Truvari==4.2
+    - plotly
+    - matplotlib
+    - seaborn
+    - pandas
+    - tabulate
